@@ -19,7 +19,6 @@ class WizTankReading(models.TransientModel):
 
     def run_report(self):
         df = self.get_report_data()
-        print(err)
         """ So here we  have back all the consolidated data by line/tank"""
         """ We now need to find out which lines go to which people (Technician and Contacts. Load into recipient_df"""
 
