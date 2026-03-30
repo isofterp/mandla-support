@@ -13,7 +13,7 @@ class WizTankReading(models.TransientModel):
     _name = "tank.reading.wizard"
     _description = "Tank Reading Report"
 
-    start_date = fields.Date(string="Start Date", default='2022-07-01')
+    start_date = fields.Date(string="Start Date", default='2026-01-01')
     end_date = fields.Date(string="End Date", default=datetime.today())
     site_ids = fields.Many2many('site.site', string='Site')
 
