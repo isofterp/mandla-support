@@ -38,6 +38,7 @@ class WizTankReading(models.TransientModel):
         #date_domain = [('date', '>=', self.start_date), ('date', '<=', self.end_date)]
         date_domain = [('date_last_reading', '>=', self.start_date), ('date_last_reading', '<=', self.end_date)]
 
+
         final_site_ids = self.site_ids.mapped("id")
         site_domain = []
         if self.site_ids:
