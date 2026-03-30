@@ -14,7 +14,7 @@
                             name="branch_ids"
                             widget="many2many_tags"
                             options="{'no_create': True}"
-                            invisible="branches_count &lt;= 1"
+
 
                         />
                         <field
@@ -23,30 +23,16 @@
                             required="1"
                             options="{'no_create_edit': True}"
                         />
-                        <field
+                        <!--<field
                             string="Branches count"
                             name="branches_count"
                             invisible="1"
 
-                        />
+                        />-->
+
                     </group>
                 </page>
             </xpath>
         </field>
     </record>
-    <!-- Inherited Res Partner Form View to Add the Branch -->
-<!--    <record id="view_partner_form_branch_inherit" model="ir.ui.view">-->
-<!--        <field name="name">res.partner.form</field>-->
-<!--        <field name="model">res.partner</field>-->
-<!--        <field name="inherit_id" ref="base.view_partner_form" />-->
-<!--        <field name="arch" type="xml">-->
-<!--            <field name="company_id" position="after">-->
-<!--                <field-->
-<!--                    name="branch_id"-->
-<!--                    options="{'no_create_edit': True}"-->
-<!--                    context="{'branch_filter': True, 'filter_company_id': company_id}"-->
-<!--                />-->
-<!--            </field>-->
-<!--        </field>-->
-<!--    </record>-->
 </odoo>

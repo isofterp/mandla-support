@@ -131,6 +131,7 @@ class WizTankReading(models.TransientModel):
             #line = line_obj.search([('name', '=', row["line"])])
             line = line_obj.search([('name', '=', row["line"]), ('site_id', '=', row["site_id"])])
             for x in line.employee_ids:
+                logging.warning("The line is %s", line.name)
                 logging.warning("---The employee is %s", x.user_id.name)
                 recipient_df = recipient_df.append({
                     'user_name': x.user_id.name,
