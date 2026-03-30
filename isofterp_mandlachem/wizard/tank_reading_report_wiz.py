@@ -28,6 +28,7 @@ class WizTankReading(models.TransientModel):
         """ Now we have a DF (recipient_df)  with user_id and rec ids"""
         """ So create another df with for each email address"""
         self._build_email_data(recipient_df, df)
+        
 
     def get_report_data(self):
         df = pd.DataFrame()
