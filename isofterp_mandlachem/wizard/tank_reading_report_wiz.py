@@ -71,7 +71,10 @@ class WizTankReading(models.TransientModel):
                             df.at[index, 'qty'] = df['qty'] + rec.usage
                         else:
                             """ we have NOT found a record so create a new one"""
-                            logging.warning("Site name %s and tank name %s", rec.site_id.name, rec.tank_id.name)
+                            logging.warning("Site name %s", rec.site_id.name)
+                            logging.warning("Tank name %s", rec.tank_id.name)
+                            logging.warning("Line name %s", rec.line_id.name)
+                            logging.warning("Line ID %s", rec.line_id.name)
 
                             df = df.append({
                                 'key': rec.site_id.name + rec.tank_id.name,
