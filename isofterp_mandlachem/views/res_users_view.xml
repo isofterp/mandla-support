@@ -16,17 +16,6 @@
                             options="{'no_create': True}"
 
                         />
-<!--                        <field-->
-<!--                            name="branch_id"-->
-<!--                            string="Current Branch"-->
-<!--                            required="1"-->
-<!--                            options="{'no_create_edit': True}"-->
-<!--                        />-->
-<!--                        <field-->
-<!--                            string="Branches count"-->
-<!--                            name="branches_count"-->
-<!--                            invisible="1"-->
-<!--                        />-->
                     </group>
                 </page>
             </xpath>
